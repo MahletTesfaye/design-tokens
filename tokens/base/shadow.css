@@ -1,0 +1,13 @@
+/**
+ * This file was generated automatically by Supernova.io and should not be changed manually.
+ * To modify the format or content of this file, please contact your design system team. 
+ */
+
+:root {
+  --alds-shadow-xs: 0px 4px 8px 0px #0000000a;
+  --alds-shadow-sm: 0px 2px 8px 0px #00000014;
+  --alds-shadow-md: 0px 4px 8px -2px #00000029;
+  --alds-shadow-lg: 0px 8px 20px -4px #0000001f;
+  --alds-shadow-xl: 0px 12px 20px -4px #00000029;
+  --alds-shadow-2xl: 0px 12px 40px 2px #00000033;
+}

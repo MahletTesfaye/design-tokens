@@ -1,0 +1,11 @@
+/**
+ * This file was generated automatically by Supernova.io and should not be changed manually.
+ * To modify the format or content of this file, please contact your design system team. 
+ */
+
+:root {
+  --alds-gradient-border-secondary: linear-gradient(180deg, #f6f6f6 0.48%, #000000 50.96%, #f6f6f6 100%);
+  --alds-gradient-background-primary: linear-gradient(132.9748261329743deg, #f68b2e 0%, #f6bb5c 100%);
+  --alds-gradient-background-secondary: linear-gradient(126.01052540219935deg, #fbd029 0%, #eacc81 36.54%, #f0c966 100%);
+  --alds-gradient-background-tertiary: linear-gradient(180deg, #d0d2d5 17%, #d0d2d5 28%, #b3b6b8 40%, #b3b6b8 50%, #d0d2d5 59%, #d0d2d5 67%, #b3b6b8 100%);
+}

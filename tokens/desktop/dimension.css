@@ -1,0 +1,47 @@
+/**
+ * This file was generated automatically by Supernova.io and should not be changed manually.
+ * To modify the format or content of this file, please contact your design system team. 
+ */
+
+.theme-desktop {
+  --alds-dimension-max-width: 2000px;
+  --alds-dimension-min-width: 960px;
+  --alds-dimension-container-size: 1140px;
+  --alds-dimension-columns: 12px;
+  --alds-dimension-horizontal-margin: var(--alds-dimension-spacing-60);
+  --alds-dimension-gutter: var(--alds-dimension-spacing-32);
+  --alds-dimension-default-width: var(--alds-dimension-breakpoint-lg);
+  --alds-dimension-body-xl: var(--alds-dimension-font-size-20);
+  --alds-dimension-body-lg: var(--alds-dimension-font-size-18);
+  --alds-dimension-body-sm: var(--alds-dimension-font-size-14);
+  --alds-dimension-body-md: var(--alds-dimension-font-size-16);
+  --alds-dimension-body-xs: var(--alds-dimension-font-size-12);
+  --alds-dimension-label-md: var(--alds-dimension-font-size-18);
+  --alds-dimension-label-lg: var(--alds-dimension-font-size-20);
+  --alds-dimension-label-sm: var(--alds-dimension-font-size-14);
+  --alds-dimension-display-lg: var(--alds-dimension-font-size-60);
+  --alds-dimension-display-md: var(--alds-dimension-font-size-56);
+  --alds-dimension-display-sm: var(--alds-dimension-font-size-40);
+  --alds-dimension-headline-lg: var(--alds-dimension-font-size-48);
+  --alds-dimension-headline-md: var(--alds-dimension-font-size-40);
+  --alds-dimension-headline-sm: var(--alds-dimension-font-size-32);
+  --alds-dimension-title-sm: var(--alds-dimension-font-size-24);
+  --alds-dimension-title-md: var(--alds-dimension-font-size-28);
+  --alds-dimension-title-lg: var(--alds-dimension-font-size-32);
+  --alds-dimension-spacing-0: var(--alds-dimension-spacing-0);
+  --alds-dimension-spacing-1: var(--alds-dimension-spacing-4);
+  --alds-dimension-spacing-2: var(--alds-dimension-spacing-8);
+  --alds-dimension-spacing-3: var(--alds-dimension-spacing-12);
+  --alds-dimension-spacing-4: var(--alds-dimension-spacing-16);
+  --alds-dimension-spacing-5: var(--alds-dimension-spacing-20);
+  --alds-dimension-spacing-6: var(--alds-dimension-spacing-24);
+  --alds-dimension-spacing-7: var(--alds-dimension-spacing-28);
+  --alds-dimension-spacing-8: var(--alds-dimension-spacing-32);
+  --alds-dimension-spacing-9: var(--alds-dimension-spacing-36);
+  --alds-dimension-spacing-10: var(--alds-dimension-spacing-40);
+  --alds-dimension-spacing-11: var(--alds-dimension-spacing-44);
+  --alds-dimension-spacing-12: var(--alds-dimension-spacing-48);
+  --alds-dimension-spacing-13: var(--alds-dimension-spacing-52);
+  --alds-dimension-spacing-14: var(--alds-dimension-spacing-56);
+  --alds-dimension-spacing-15: var(--alds-dimension-spacing-60);
+}

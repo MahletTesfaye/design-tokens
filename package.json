@@ -1,0 +1,17 @@
+{
+  "name": "@mahlettesfaye/design-tokens",
+  "version": "1.0.0",
+  "description": "A design tokens system for consistent styling.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"no test specified yet\""
+  },
+  "publishConfig": {
+    "@mahlettesfaye:registry": "https://npm.pkg.github.com"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^4.1.3"
+  }
+}

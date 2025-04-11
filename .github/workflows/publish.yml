@@ -30,8 +30,10 @@ jobs:
       - name: Get version from tag
         id: version
         run: |
-          VERSION=${GITHUB_REF#refs/tags/v}
-          echo "version=${VERSION}" >> $GITHUB_OUTPUT
+          TAG_VERSION=${GITHUB_REF#refs/tags/}
+          CLEAN_VERSION=${TAG_VERSION#v}
+          echo "version=${CLEAN_VERSION}" >> $GITHUB_OUTPUT
+          echo "Extracted version: ${CLEAN_VERSION}"
       
       - name: Update version
         run: npm version ${{ steps.version.outputs.version }} --no-git-tag-version
@@ -39,4 +41,4 @@ jobs:
       - run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GHB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

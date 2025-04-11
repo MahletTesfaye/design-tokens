@@ -2,7 +2,7 @@
   "name": "@mahlettesfaye/design-tokens",
   "version": "1.0.0",
   "description": "A design tokens system for consistent styling.",
-  "main": "src/tailwind.config.js",
+  "main": "tailwind.config.js",
   "scripts": {
     "test": "echo \"no test specified yet\"",
     "prepare": "npm run build",

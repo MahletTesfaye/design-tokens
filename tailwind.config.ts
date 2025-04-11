@@ -1,7 +1,7 @@
 import {
     generateColorVariables,
     generateCustomVariables
-} from "./theme/cssVariableGenerators.js";
+} from "./src/theme/cssVariableGenerators.js";
 
 export default {
     content: [

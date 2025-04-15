@@ -2,16 +2,17 @@
   "name": "@mahlettesfaye/design-tokens",
   "version": "1.0.0",
   "description": "A design tokens system for consistent styling.",
-  "main": "tailwind.config.js",
-  "scripts": {
-    "test": "echo \"no test specified yet\"",
-    "prepare": "npm run build",
-    "build": "echo \"Building package...\""
-  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "src/**/*.js",
-    "README.md"
+    "dist",
+    "src/tokens"
   ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
     "access": "public"
@@ -23,7 +24,7 @@
   "keywords": [
     "design-tokens",
     "tailwindcss",
-    "styling"
+    "css-variables"
   ],
   "author": "",
   "license": "ISC",
@@ -31,10 +32,10 @@
     "url": "https://github.com/mahlettesfaye/design-tokens/issues"
   },
   "homepage": "https://github.com/mahlettesfaye/design-tokens#readme",
-  "dependencies": {
-    "tailwindcss": "^4.1.3"
-  },
   "devDependencies": {
-    "@types/node": "^22.14.0"
+    "@types/node": "^22.14.1",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.4",
+    "typescript": "^5.8.3"
   }
 }

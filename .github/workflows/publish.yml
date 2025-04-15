@@ -36,10 +36,23 @@ jobs:
           echo "version=${CLEAN_VERSION}" >> $GITHUB_OUTPUT
           echo "Extracted version: ${CLEAN_VERSION}"
       
+      - name: Debug current package.json
+        run: cat package.json
+      
       - name: Update version
         run: |
+          CURRENT_VERSION=$(node -p "require('./package.json').version")
+          echo "Current version: $CURRENT_VERSION"
+          echo "New version: ${{ steps.version.outputs.version }}"
+          
+          if [ "$CURRENT_VERSION" != "${{ steps.version.outputs.version }}" ]; then
             npm version ${{ steps.version.outputs.version }} --no-git-tag-version
-            cat package.json
+          else
+            echo "Version already matches, no update needed"
+          fi
+          
+          echo "Updated package.json:"
+          cat package.json
             
       - run: npm ci
       - run: npm publish

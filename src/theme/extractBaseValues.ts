@@ -52,14 +52,14 @@ export const extractBaseValues = (token: string): string => {
     const root = postcss.parse(cssContent);
     let extracted: string | null = null;
 
-    root.walkRules((rule) => {
-        rule.walkDecls((decl) => {
+    root.walkRules((rule: postcss.Rule) => {
+        rule.walkDecls((decl: postcss.Declaration) => {
             if (
-                decl.prop.includes(cleanedToken) ||
-                decl.value.includes(cleanedToken)
+            decl.prop.includes(cleanedToken) ||
+            decl.value.includes(cleanedToken)
             ) {
-                extracted = decl.value;
-                return false;
+            extracted = decl.value;
+            return false;
             }
         });
         if (extracted) {
@@ -78,9 +78,9 @@ export const getExtractedContent = (
 
     const root = postcss.parse(themeCssContent);
     let extracted: string | null = null;
-    root.walkRules((rule) => {
+    root.walkRules((rule: postcss.Rule) => {
         if (rule.selector && rule.selector.includes(`.theme-${theme}`)) {
-            rule.walkDecls((decl) => {
+            rule.walkDecls((decl: postcss.Declaration) => {
                 if (
                     decl.prop.includes(cleanedToken) ||
                     decl.value.includes(cleanedToken)
